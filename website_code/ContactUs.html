@@ -1,0 +1,220 @@
+<header>
+    <div class="container">
+    
+      <h1>
+        <a href="Index.html">
+          <img src="./images/logo.png" alt="Cantor College Logo" class="logo">
+        
+        </a>
+      </h1>
+      
+      <nav>
+        <ul>
+            <li><a href="LearningResources.html">Learning Resources</a></li>
+            <li><a href="StaffAndStudents.html">Staff and Students</a></li>
+            <li><a href="Businesses.html">Working With Businesses</a></li>
+            <li><a href="CourseLists.html">Course Lists</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantor College - Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+
+    <section class="hero">
+        <div class="hero-content">
+          <h2>Contact Us</h2>
+          <p>Explore a world of opportunities and achieve academic excellence.</p>
+          <a href="CourseLists.html" class="btn">Explore Programs</a>
+
+        </div>
+      </section>
+
+
+<div class="container">
+    <h2>We'd love to hear from you!</h2>
+    <form action="your_server_endpoint" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Enter the subject">
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Write your message here"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="thank-you-message" id="thankYouMessage">
+        <h2>Thank you for contacting us!</h2>
+        <p>Your message has been successfully submitted. We'll get back to you as soon as possible.</p>
+    </div>
+        
+    </form>
+</div>
+
+
+
+
+<footer>
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();  
+        
+        
+        document.getElementById('thankYouMessage').style.display = 'block';
+        
+        
+        document.querySelector('.container').style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantor College - Contact Us</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1000px; 
+            width: 90%; 
+            margin: 40px auto; 
+            padding: 30px;
+            background-color: #003366;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 20px; 
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .thank-you-message {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            display: none;  
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px 0;
+            }
+        }
+    </style>
+</head>
+<body>
